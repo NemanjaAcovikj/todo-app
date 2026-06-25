@@ -8,7 +8,6 @@ app = Flask(__name__)
 title = "TODO Application"
 heading = "TODO App by: Harsh Soni"
 
-# ✅ Mongo connection (Docker-safe)
 client = MongoClient(os.environ.get("MONGO_URI", "mongodb://mongo:27017/todo_db"))
 db = client.todo_db
 todos = db.todos
