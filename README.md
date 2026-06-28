@@ -3,12 +3,13 @@
 Created using Flask and MongoDB
 
 ## How to deploy on Kubernetes
-
+```
 kubectl apply -f kubernetes/namespace.yaml
 kubectl apply -f kubernetes/
 kubectl get pods -n todo-ns
 kubectl get svc -n todo-ns
 kubectl get ingress -n todo-ns
+```
 
  ## TODO App 
  ### Developer: Harsh Soni
