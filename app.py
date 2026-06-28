@@ -2,17 +2,13 @@ from flask import Flask, render_template, request, redirect, url_for
 from bson import ObjectId
 from pymongo import MongoClient
 import os
-import certifi
 
 app = Flask(__name__)
 
 title = "TODO Application"
 heading = "TODO App by: Harsh Soni"
 
-client = MongoClient(
-    os.environ.get("MONGO_URI"),
-    tlsCAFile=certifi.where()
-)
+client = MongoClient(os.environ.get("MONGO_URI"))
 db = client.todo_db
 todos = db.todos
 
