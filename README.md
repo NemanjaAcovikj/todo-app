@@ -5,9 +5,9 @@ Created using Flask and MongoDB
 ## Live Demo
 
 The application is deployed and accessible here:
-```
+
 https://todo-app-wjaq.onrender.com
-```
+
 
 ## Run with Docker Compose
 
@@ -16,13 +16,13 @@ docker-compose up --build
 ```
 
 App:
-```
+
 http://localhost:5000
-```
+
 Mongo Express: 
-```
+
 http://localhost:8081
-```
+
 
 ## How to deploy on Kubernetes
 ```
