@@ -5,4 +5,4 @@ metadata:
   namespace: todo-ns
 data:
   APP_TITLE: "TODO Application"
-  ENV: "production"
+  MONGO_URI: "mongodb://admin:password123@mongo:27017/todo_db?authSource=admin"

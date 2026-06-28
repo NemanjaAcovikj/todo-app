@@ -23,8 +23,8 @@ spec:
           env:
             - name: MONGO_URI
               valueFrom:
-                secretKeyRef:
-                  name: mongo-secret
+                configMapKeyRef:
+                  name: todo-config
                   key: MONGO_URI
 
             - name: APP_TITLE
